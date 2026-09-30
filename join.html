@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Join KaffiBucks Rewards and collect Beans toward cafe favorites." />
+    <title>Join KaffiBucks Rewards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="join-page">
+    <div class="announcement">
+      <p>A little more joy in your everyday.</p>
+      <a href="rewards.html">Explore rewards <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html#home" class="logo" aria-label="KaffiBucks home">Kaffi<span>Bucks</span></a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="menu.html">Menu</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="gift.html">Gift cards</a>
+        </nav>
+        <div class="header-actions">
+          <a class="location-link" href="cafe.html"><span aria-hidden="true">&#9679;</span> Find a cafe</a>
+          <a class="button button--outline" href="rewards.html">How it works</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="join-layout">
+      <section class="join-story" aria-labelledby="join-title">
+        <div class="join-story-shade"></div>
+        <div class="join-story-copy">
+          <p class="eyebrow">KaffiBucks Rewards</p>
+          <h1 id="join-title">More good<br />in your cup.</h1>
+          <p>Join for free and collect Beans toward little treats, favorite drinks, and the moments worth making time for.</p>
+          <ul class="join-benefits">
+            <li>Earn Beans with eligible cafe visits</li>
+            <li>Choose rewards that suit your moment</li>
+            <li>Get member news and seasonal surprises</li>
+          </ul>
+          <a class="join-story-link" href="rewards.html">Explore all member benefits <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </section>
+
+      <section class="join-form-panel" aria-labelledby="form-title">
+        <div class="join-form-inner">
+          <p class="eyebrow">A good thing starts here</p>
+          <h2 id="form-title">Create your account</h2>
+          <p class="join-intro">A few details and you're on your way.</p>
+          <form id="join-form">
+            <label for="full-name">Full name</label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" required />
+
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="password">Create a password</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" aria-describedby="password-hint" required />
+            <p id="password-hint" class="field-hint">Use at least 8 characters.</p>
+
+            <label for="confirm-password">Confirm password</label>
+            <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required />
+
+            <label class="join-opt-in" for="updates">
+              <input id="updates" name="updates" type="checkbox" />
+              <span>Send me occasional news, offers, and cafe updates.</span>
+            </label>
+
+            <button class="button button--dark join-submit" type="submit">Join now <span aria-hidden="true">&rarr;</span></button>
+            <p id="join-status" class="join-status" role="status" aria-live="polite" hidden></p>
+          </form>
+          <p class="join-disclaimer">This is a front-end preview. Account creation isn't connected, and your details won't be saved.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a href="index.html#home" class="logo">Kaffi<span>Bucks</span></a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="menu.html">Menu</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="gift.html">Gift cards</a>
+          <a href="cafe.html">Find a cafe</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 KaffiBucks Coffee Company</span>
+        <span>Made for the moments in between.</span>
+      </div>
+    </footer>
+
+    <script>
+      const joinForm = document.querySelector("#join-form");
+      const password = document.querySelector("#password");
+      const confirmPassword = document.querySelector("#confirm-password");
+      const joinStatus = document.querySelector("#join-status");
+
+      confirmPassword.addEventListener("input", () => {
+        confirmPassword.setCustomValidity("");
+      });
+
+      joinForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        confirmPassword.setCustomValidity(
+          password.value === confirmPassword.value ? "" : "Passwords must match."
+        );
+
+        if (!joinForm.reportValidity()) return;
+
+        joinStatus.textContent = "Thanks for checking out KaffiBucks Rewards. This preview doesn't create or save accounts yet.";
+        joinStatus.hidden = false;
+      });
+    </script>
+  </body>
+</html>

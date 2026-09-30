@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View an interactive map centered on Mumbai." />
+    <title>Mumbai Map | KaffiBucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="cafe-page">
+    <div class="announcement">
+      <p>A little more joy in your everyday.</p>
+      <a href="menu.html">Explore the menu <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html#home" class="logo" aria-label="KaffiBucks home">Kaffi<span>Bucks</span></a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="menu.html">Menu</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="gift.html">Gift cards</a>
+        </nav>
+        <div class="header-actions">
+          <a class="button button--outline" href="join.html">Join now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="locator-heading" aria-labelledby="locator-title">
+        <p class="eyebrow">Maharashtra, India</p>
+        <h1 id="locator-title">Mumbai.</h1>
+        <p>Explore Mumbai on the map.</p>
+      </section>
+
+      <section class="locator-layout locator-map-only" aria-label="Map of Mumbai">
+        <div class="locator-map-wrap">
+          <div id="cafe-map" role="application" aria-label="Interactive map centered on Mumbai, India"></div>
+          <a class="map-external-link" href="https://www.openstreetmap.org/#map=11/19.0760/72.8777" target="_blank" rel="noreferrer">Open map in a new tab <span aria-hidden="true">&#8599;</span></a>
+          <noscript><p class="map-fallback">Enable JavaScript to view the interactive Mumbai map.</p></noscript>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a href="index.html#home" class="logo">Kaffi<span>Bucks</span></a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="menu.html">Menu</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="gift.html">Gift cards</a>
+          <a href="cafe.html" aria-current="page">Find a cafe</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 KaffiBucks Coffee Company</span>
+        <span>Made for the moments in between.</span>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      const map = L.map("cafe-map", { scrollWheelZoom: false }).setView([19.0760, 72.8777], 11);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+      window.addEventListener("load", () => map.invalidateSize());
+    </script>
+  </body>
+</html>

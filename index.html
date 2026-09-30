@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Make room for a better coffee break. Explore handcrafted drinks, fresh bites, and rewards at KaffiBucks."
+    />
+    <title>KaffiBucks</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <p>A little more joy in your everyday.</p>
+      <a href="menu.html">See what's brewing <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#home" class="logo" aria-label="KaffiBucks home">Kaffi<span>Bucks</span></a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="menu.html">Menu</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="gift.html">Gift cards</a>
+        </nav>
+        <div class="header-actions">
+          <a class="location-link" href="cafe.html"><span aria-hidden="true">&#9679;</span> Find a cafe</a>
+          <a class="button button--outline" href="#sign-in">Sign in</a>
+          <a class="button button--dark" href="join.html">Join now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="A freshly poured iced coffee with a soft layer of foam"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Your coffee, your moment</p>
+          <h1 id="hero-title">Make today<br />a little warmer.</h1>
+          <p class="hero-copy">Good coffee has a way of bringing everything into focus. Find your new favorite, made just the way you like it.</p>
+          <a class="button button--gold" href="menu.html">Explore the menu <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <a class="hero-note" href="menu.html"><span>01</span> Handcrafted for your everyday</a>
+      </section>
+
+      <section class="feature feature--cream" aria-labelledby="feature-one-title">
+        <div class="feature-image feature-image--bites" role="img" aria-label="A table set with small, freshly baked pastries"></div>
+        <div class="feature-copy">
+          <p class="eyebrow">A little something on the side</p>
+          <h2 id="feature-one-title">The best breaks<br />come with a bite.</h2>
+          <p>From flaky morning pastries to an afternoon treat, there's always something good to pair with your cup.</p>
+          <a class="text-link" href="menu.html">Browse food &amp; bakery <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </section>
+
+      <section class="feature feature--gold feature--reverse" aria-labelledby="feature-two-title">
+        <div class="feature-image feature-image--gather" role="img" aria-label="Friends sharing coffee together around a table"></div>
+        <div class="feature-copy">
+          <p class="eyebrow">A season worth sharing</p>
+          <h2 id="feature-two-title">Meet your new<br />favorite ritual.</h2>
+          <p>Bright, smooth, and made for the long way home. Your next cup is waiting at the cafe.</p>
+          <a class="button button--dark" href="cafe.html">Find your cafe <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </section>
+
+      <section id="rewards" class="rewards-band" aria-labelledby="rewards-title">
+        <div class="rewards-copy">
+          <p class="eyebrow">Good things add up</p>
+          <h2 id="rewards-title">Your usual, with<br />a little extra.</h2>
+          <p>Join KaffiBucks Rewards and make every visit count toward the things you love.</p>
+          <a class="button button--outline-light" href="rewards.html">Discover rewards <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="gift-panel">
+          <img src="Images/137-112745.png" alt="A thoughtful coffee gift card ready to share" />
+          <div class="gift-caption">
+            <span>For their next favorite cup</span>
+            <a href="gift.html" aria-label="Explore gift cards">Give a little joy <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit-strip" aria-label="Visit KaffiBucks">
+        <p>Make a little time for yourself.</p>
+        <a class="text-link" href="cafe.html">Find a cafe near you <span aria-hidden="true">&rarr;</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a href="#home" class="logo">Kaffi<span>Bucks</span></a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="menu.html">Menu</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="gift.html">Gift cards</a>
+          <a href="cafe.html">Find a cafe</a>
+          <a id="sign-in" href="#home">Sign in</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 KaffiBucks Coffee Company</span>
+        <span>Made for the moments in between.</span>
+      </div>
+    </footer>
+  </body>
+</html>

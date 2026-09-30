@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the KaffiBucks menu: espresso, cold coffee, tea, bakery, lunch, and coffee to enjoy at home." />
+    <title>Menu | KaffiBucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="menu-page">
+    <div class="announcement">
+      <p>A little more joy in your everyday.</p>
+      <a href="cafe.html">Find your cafe <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html#home" class="logo" aria-label="KaffiBucks home">Kaffi<span>Bucks</span></a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="menu.html" aria-current="page">Menu</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="gift.html">Gift cards</a>
+        </nav>
+        <div class="header-actions">
+          <a class="location-link" href="cafe.html"><span aria-hidden="true">&#9679;</span> Find a cafe</a>
+          <a class="button button--outline" href="index.html#sign-in">Sign in</a>
+          <a class="button button--dark" href="join.html">Join now</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="menu-intro" aria-labelledby="menu-title">
+        <p class="eyebrow">Made for your kind of day</p>
+        <h1 id="menu-title">The KaffiBucks menu</h1>
+        <p>Find a familiar favorite or follow your curiosity. Every cup and bite is made for the moment you're in.</p>
+        <a class="menu-cafe-link" href="cafe.html"><span aria-hidden="true">&#9679;</span> Choose a cafe for availability</a>
+      </section>
+
+      <div class="menu-shell">
+        <aside class="menu-sidebar" aria-label="Menu categories">
+          <h2>Browse by category</h2>
+          <div class="category-group">
+            <p>Drinks</p>
+            <a href="#coffee">Coffee &amp; espresso</a>
+            <a href="#cold-coffee">Cold coffee</a>
+            <a href="#tea">Tea &amp; refreshers</a>
+          </div>
+          <div class="category-group">
+            <p>Food</p>
+            <a href="#bakery">Bakery</a>
+            <a href="#lunch">Lunch &amp; snacks</a>
+          </div>
+          <div class="category-group">
+            <p>Take it home</p>
+            <a href="#at-home">Coffee at home</a>
+          </div>
+        </aside>
+
+        <div class="menu-content">
+          <section class="menu-category" id="coffee" aria-labelledby="coffee-title">
+            <div class="menu-category-heading">
+              <img src="Images/menu-espresso.jpg" alt="A freshly prepared espresso drink" />
+              <div><p class="eyebrow">Comfort in every cup</p><h2 id="coffee-title">Coffee &amp; espresso</h2><p>Slow-sipped classics and espresso-house favorites.</p></div>
+            </div>
+            <div class="menu-items">
+              <article class="menu-item"><div><h3>House Drip</h3><p>Balanced, medium-roast coffee with a smooth finish.</p></div><span>₹245</span></article>
+              <article class="menu-item"><div><h3>Velvet Latte</h3><p>Espresso and steamed milk with a soft layer of foam.</p></div><span>₹385</span></article>
+              <article class="menu-item"><div><h3>Honey Oat Cappuccino</h3><p>Double espresso, oat milk, and a touch of golden honey.</p></div><span>₹405</span></article>
+              <article class="menu-item"><div><h3>Caramel Macchiato</h3><p>Vanilla-kissed milk, espresso, and a caramel finish.</p></div><span>₹425</span></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="cold-coffee" aria-labelledby="cold-title">
+            <div class="menu-category-heading">
+              <img src="Images/menu-cold-coffee.jpg" alt="Chilled coffee poured over ice" />
+              <div><p class="eyebrow">A cooler kind of coffee</p><h2 id="cold-title">Cold coffee</h2><p>Chilled, refreshing, and ready for a sunny afternoon.</p></div>
+            </div>
+            <div class="menu-items">
+              <article class="menu-item"><div><h3>Slow-Steeped Cold Brew</h3><p>Small-batch coffee steeped slow for a clean, mellow sip.</p></div><span>₹355</span></article>
+              <article class="menu-item"><div><h3>Brown Sugar Shaker</h3><p>Espresso shaken over ice with brown sugar and oat milk.</p></div><span>₹435</span></article>
+              <article class="menu-item"><div><h3>Vanilla Cream Cold Brew</h3><p>Cold brew finished with a light vanilla cream float.</p></div><span>₹410</span></article>
+              <article class="menu-item"><div><h3>Iced Mocha</h3><p>Espresso, cocoa, and milk poured over fresh ice.</p></div><span>₹420</span></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="tea" aria-labelledby="tea-title">
+            <div class="menu-category-heading">
+              <img src="Images/menu-tea.jpg" alt="A glass of tea served with a fresh citrus garnish" />
+              <div><p class="eyebrow">A moment to steep</p><h2 id="tea-title">Tea &amp; refreshers</h2><p>Floral, bright, and gently energizing sips.</p></div>
+            </div>
+            <div class="menu-items">
+              <article class="menu-item"><div><h3>Spiced Chai</h3><p>Black tea blended with warming spice and steamed milk.</p></div><span>₹360</span></article>
+              <article class="menu-item"><div><h3>Garden Matcha</h3><p>Stone-ground green tea whisked smooth with milk.</p></div><span>₹395</span></article>
+              <article class="menu-item"><div><h3>Peach Hibiscus Cooler</h3><p>Hibiscus tea, juicy peach, and a splash of citrus.</p></div><span>₹370</span></article>
+              <article class="menu-item"><div><h3>Mint &amp; Lemon Tea</h3><p>Bright lemon and fresh mint served hot or over ice.</p></div><span>₹320</span></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="bakery" aria-labelledby="bakery-title">
+            <div class="menu-category-heading">
+              <img src="Images/menu-bakery.jpg" alt="Freshly baked golden pastries" />
+              <div><p class="eyebrow">Fresh from the oven</p><h2 id="bakery-title">Bakery</h2><p>A warm, flaky something for the road or the table.</p></div>
+            </div>
+            <div class="menu-items">
+              <article class="menu-item"><div><h3>Butter Croissant</h3><p>Golden layers, baked crisp outside and tender within.</p></div><span>₹270</span></article>
+              <article class="menu-item"><div><h3>Maple Morning Bun</h3><p>Soft cinnamon pastry brushed with maple glaze.</p></div><span>₹310</span></article>
+              <article class="menu-item"><div><h3>Blueberry Crumb Muffin</h3><p>Berry-filled muffin topped with a buttery oat crumble.</p></div><span>₹305</span></article>
+              <article class="menu-item"><div><h3>Chocolate Rye Cookie</h3><p>Chewy cocoa cookie with dark chocolate pieces.</p></div><span>₹245</span></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="lunch" aria-labelledby="lunch-title">
+            <div class="menu-category-heading">
+              <img src="Images/menu-lunch.jpg" alt="A freshly made cafe sandwich with crisp greens" />
+              <div><p class="eyebrow">Make a meal of it</p><h2 id="lunch-title">Lunch &amp; snacks</h2><p>Easy favorites to keep a good day going.</p></div>
+            </div>
+            <div class="menu-items">
+              <article class="menu-item"><div><h3>Market Garden Sandwich</h3><p>Roasted vegetables, greens, and herb spread on sourdough.</p></div><span>₹700</span></article>
+              <article class="menu-item"><div><h3>Smoky Cheddar Toastie</h3><p>Melted cheddar and tomato tucked into toasted country bread.</p></div><span>₹660</span></article>
+              <article class="menu-item"><div><h3>Harvest Grain Bowl</h3><p>Warm grains, seasonal vegetables, and lemon dressing.</p></div><span>₹770</span></article>
+              <article class="menu-item"><div><h3>Apple &amp; Almond Pack</h3><p>Fresh apple slices with roasted almonds for a quick pause.</p></div><span>₹355</span></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="at-home" aria-labelledby="home-coffee-title">
+            <div class="menu-category-heading">
+              <img src="Images/137-112942.png" alt="A comforting cup of coffee enjoyed at home" />
+              <div><p class="eyebrow">Keep the good going</p><h2 id="home-coffee-title">Coffee at home</h2><p>Bring the cafe ritual to your kitchen counter.</p></div>
+            </div>
+            <div class="menu-items">
+              <article class="menu-item"><div><h3>House Blend Whole Bean</h3><p>Our everyday medium roast, whole bean and ready to grind.</p></div><span>₹1,160</span></article>
+              <article class="menu-item"><div><h3>Golden Hour Espresso</h3><p>A rich, chocolatey espresso roast for home brewing.</p></div><span>₹1,290</span></article>
+              <article class="menu-item"><div><h3>Single-Origin Pour-Over</h3><p>A rotating origin with bright notes and a clean finish.</p></div><span>₹1,330</span></article>
+              <article class="menu-item"><div><h3>Cold Brew Sachets</h3><p>Easy steep-at-home packs for a smooth chilled coffee.</p></div><span>₹1,040</span></article>
+            </div>
+          </section>
+
+          <p class="menu-disclaimer">Sample menu prices are converted at approximately ₹83 per US$1 and rounded; availability varies by cafe. Ask our team about ingredients and dietary needs.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a href="index.html#home" class="logo">Kaffi<span>Bucks</span></a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html#home">Home</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="gift.html">Gift cards</a>
+          <a href="cafe.html">Find a cafe</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 KaffiBucks Coffee Company</span>
+        <span>Made for the moments in between.</span>
+      </div>
+    </footer>
+  </body>
+</html>
